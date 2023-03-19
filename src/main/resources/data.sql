@@ -1,15 +1,24 @@
 INSERT INTO HEROES(ID,AGE,NAME) VALUES
     (
-1,
-         2000,
+        1,
+        1500,
         'Thor'
     ),
     (
-2,
-        100,
+        2,
+        103,
         'Steve Rogers'
     ),
-    (3,
+    (   3,
         18,
         'Peter Parker'
-    );
+    ),
+    (   4,
+        50,
+        'Tony Stark'
+    ),
+    (   5,
+        36,
+        'Natasha Romanoff'
+    )
+   ;
