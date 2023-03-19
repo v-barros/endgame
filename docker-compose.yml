@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  heroesapp:
+    build:
+      context: ./
+    ports:
+      - "8080:8080"
+    volumes:
+      - heroes-data:/var/lib/heroes
+    networks:
+      - heroes-network
+
+networks:
+  heroes-network:
+    driver: bridge
+
+volumes:
+  heroes-data: {}
+
