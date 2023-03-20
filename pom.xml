@@ -8,11 +8,6 @@
 		<version>3.0.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<configuration>
-		<source>1.7</source>
-		<target>1.7</target>
-		<encoding>UTF-8</encoding>
-	</configuration>
 	
 	<groupId>com.puc.devops</groupId>
 	<artifactId>endgame</artifactId>
@@ -20,7 +15,7 @@
 	<name>EndGame</name>
 	<description>Spring Boot demo project to kill Thanos</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
