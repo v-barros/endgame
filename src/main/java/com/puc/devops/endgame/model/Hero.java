@@ -9,18 +9,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Column;
 import java.util.Objects;
-import java.util.UUID;
 
 @Entity(name = "heroes")
 public class Hero {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id",updatable = false,unique = true,nullable = false,columnDefinition = "BINARY(16)")
-    private UUID id;
+    @Column(name = "id",updatable = false,unique = true,nullable = false)
+    private Long id;
     private String name;
     private int age;
 
-    public Hero(UUID id, String name, int age) {
+    public Hero(Long id, String name, int age) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -29,11 +28,11 @@ public class Hero {
     public Hero() {
     }
 
-    public UUID getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
